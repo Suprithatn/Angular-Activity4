@@ -1,0 +1,16 @@
+<div class="row">
+    <h3 class="text-center">Course Details</h3>
+    <div class="col-md-4 col-xs-4 col-sm-4">
+        <div class="list-group" >
+            <a class="list-group-item" 
+            *ngFor="let course of courseInfo"
+            routerLink = "{{course.instructorld}}"
+            routerLinkActive="active">
+            {{ course.courseName}}
+            </a>
+        </div>
+    </div>
+    <div class="col-md-8 col-xs-8 col-sm-8">
+        <router-outlet></router-outlet>
+    </div>
+</div>

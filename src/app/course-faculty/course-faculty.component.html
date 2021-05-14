@@ -1,0 +1,12 @@
+<div *ngIf="facultyFound;else noFaculty">
+    <h3 class="text-center">Faculty Details</h3>
+    <p>Faculty ID: {{ facultyMembers.facultyld }}</p>
+    <p>Name: {{ facultyMembers.facultyName }}</p>
+    <p>Mobile: {{ facultyMembers.facultyMobile }}</p>
+    <p>Email: {{ facultyMembers.facultyEmail }}</p>
+    <p>Highest Qualification: {{ facultyMembers.highestQualification }}</p>
+    <p>Work Location: {{ facultyMembers.workLocation }}</p>
+</div>
+<ng-template #noFaculty>
+    <h3>No Faculty!</h3>
+</ng-template>
